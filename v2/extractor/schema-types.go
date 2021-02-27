@@ -67,7 +67,7 @@ const (
 	TimeoutDefault = "default"
 )
 
-func TimeoutKeys() []string {
+func timeoutKeys() []string {
 	return []string{
 		TimeoutCreate,
 		TimeoutRead,
@@ -77,7 +77,7 @@ func TimeoutKeys() []string {
 	}
 }
 
-func ShortenType(value string) string {
+func shortenType(value string) string {
 	if len(value) > 4 && value[0:4] == "Type" {
 		return value[4:]
 	}
